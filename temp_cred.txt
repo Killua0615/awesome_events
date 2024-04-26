@@ -1,0 +1,1 @@
+Missing 'config/master.key' to decrypt credentials. See `rails credentials:help`

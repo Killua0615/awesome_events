@@ -41,3 +41,5 @@ yarn-debug.log*
 .yarn-integrity
 
 /data/redis/*
+
+#/config/initializers/omniauth.rb
