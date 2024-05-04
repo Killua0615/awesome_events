@@ -14,11 +14,23 @@
         <%= link_to "AwesomeEvents", root_path, class: "navbar-brand mr-auto" %>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <%= link_to "Githubでログイン", "/auth/github", class: "nav-link", method: :post %>
+            <!-- 追加 -->
+		        <%= form_with url: '/auth/github', method: :post, local: true do %>
+		          <%= button_tag type: :submit, class: "nav-link btn btn-link" do %>
+		            GitHubでログイン
+			        <% end %>
+			      <% end %>
           </li>
         </ul>
       </div>
       <div class="container">
+         <!-- 追加 -->
+        <% if flash.notice %>
+          <div class="alert alert-success">
+            <%= flash.notice %>
+          </div>
+        <% end %>
+
         <%= yield %>
       </div>
     </header>

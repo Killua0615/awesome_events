@@ -45,4 +45,4 @@ yarn-debug.log*
 
 
 /config/initializers/omniauth.rb
-.env.development
+.env.development.env
