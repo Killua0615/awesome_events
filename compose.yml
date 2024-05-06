@@ -16,8 +16,8 @@ services:
       - REDIS_URL=redis://redis:6379/0
       # 追加
       - EDITOR=vim
-      - GITHUB_KEY='HI'
-      - GITHUB_SECRET='HI'
+      # - GITHUB_KEY='HI'
+      # - GITHUB_SECRET='HI'
   webpacker:
     build: .
     command: ./bin/webpack-dev-server
